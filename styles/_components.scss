@@ -1,0 +1,69 @@
+.loader {
+    border: 1rem solid $color-bg;
+    border-top: 1rem solid $color-blue;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.navbar {
+    height: 7rem;
+    width: 100%;
+    background: white;
+    color: $color-text;
+    position: fixed;
+    top: 0;
+    padding: 0 10vw;
+    font-weight: bold;
+    border-bottom: .1rem solid $color-gray;
+    z-index: 99;
+
+    &__item-cont {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__logo {
+        background-color: $color-text;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        padding: .8rem 1.6rem;
+    }
+
+    &__login {
+        background-color: $color-blue;
+        color: #fff;
+    }
+
+    &__create-post {
+        background-color: $color-blue;
+        color: #fff;
+    }
+}
+
+button {
+    background-color: $color-gray;
+    border: none;
+    color: $color-text;
+    padding: 1.6rem 3.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 0.45rem;
+    cursor: pointer;
+    margin: .8rem 1.6rem 0.8rem 0;
+}

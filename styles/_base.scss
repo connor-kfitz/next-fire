@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+$color-bg: #eef0f1;
+$color-text: #08090a;
+$color-blue: #3b49df;
+$color-red: #df3b3b;
+$color-green: #3bdf72;
+$color-gray: #b5bdc4;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $color-text;
+    background-color: $color-bg;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
