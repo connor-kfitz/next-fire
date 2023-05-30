@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import { useContext } from "react";
+import { UserContext } from "../lib/context";
+
 export default function Navbar({ }) {
-    const user: boolean = null;
-    const username: boolean = null;
+    const { user, username } = useContext(UserContext);
 
     const createPostStyle = {
         marginLeft: 'auto'
