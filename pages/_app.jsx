@@ -6,8 +6,6 @@ import { useUserData } from '../lib/hooks';
 import '../styles/globals.css';
 import '../styles/main.scss';
 
-import { GetServerSideProps } from 'next';
-
 function MyApp({ Component, pageProps }) {
 
   const userData = useUserData();
